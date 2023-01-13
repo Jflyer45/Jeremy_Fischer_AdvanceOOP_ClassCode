@@ -1,0 +1,14 @@
+C:\Users\jflye\source\repos\AdvanceOOP_ClassCode\ObserverLearning\ObserverLearning\bin\Debug\netcoreapp3.1\ObserverLearning.exe
+C:\Users\jflye\source\repos\AdvanceOOP_ClassCode\ObserverLearning\ObserverLearning\bin\Debug\netcoreapp3.1\ObserverLearning.deps.json
+C:\Users\jflye\source\repos\AdvanceOOP_ClassCode\ObserverLearning\ObserverLearning\bin\Debug\netcoreapp3.1\ObserverLearning.runtimeconfig.json
+C:\Users\jflye\source\repos\AdvanceOOP_ClassCode\ObserverLearning\ObserverLearning\bin\Debug\netcoreapp3.1\ObserverLearning.runtimeconfig.dev.json
+C:\Users\jflye\source\repos\AdvanceOOP_ClassCode\ObserverLearning\ObserverLearning\bin\Debug\netcoreapp3.1\ObserverLearning.dll
+C:\Users\jflye\source\repos\AdvanceOOP_ClassCode\ObserverLearning\ObserverLearning\bin\Debug\netcoreapp3.1\ObserverLearning.pdb
+C:\Users\jflye\source\repos\AdvanceOOP_ClassCode\ObserverLearning\ObserverLearning\obj\Debug\netcoreapp3.1\ObserverLearning.csproj.AssemblyReference.cache
+C:\Users\jflye\source\repos\AdvanceOOP_ClassCode\ObserverLearning\ObserverLearning\obj\Debug\netcoreapp3.1\ObserverLearning.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jflye\source\repos\AdvanceOOP_ClassCode\ObserverLearning\ObserverLearning\obj\Debug\netcoreapp3.1\ObserverLearning.AssemblyInfoInputs.cache
+C:\Users\jflye\source\repos\AdvanceOOP_ClassCode\ObserverLearning\ObserverLearning\obj\Debug\netcoreapp3.1\ObserverLearning.AssemblyInfo.cs
+C:\Users\jflye\source\repos\AdvanceOOP_ClassCode\ObserverLearning\ObserverLearning\obj\Debug\netcoreapp3.1\ObserverLearning.csproj.CoreCompileInputs.cache
+C:\Users\jflye\source\repos\AdvanceOOP_ClassCode\ObserverLearning\ObserverLearning\obj\Debug\netcoreapp3.1\ObserverLearning.dll
+C:\Users\jflye\source\repos\AdvanceOOP_ClassCode\ObserverLearning\ObserverLearning\obj\Debug\netcoreapp3.1\ObserverLearning.pdb
+C:\Users\jflye\source\repos\AdvanceOOP_ClassCode\ObserverLearning\ObserverLearning\obj\Debug\netcoreapp3.1\ObserverLearning.genruntimeconfig.cache

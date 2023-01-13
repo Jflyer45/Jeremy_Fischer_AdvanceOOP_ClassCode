@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\jflye\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\jflye\\.nuget\\packages"
+    ]
+  }
+}
