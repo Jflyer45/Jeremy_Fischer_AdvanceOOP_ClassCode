@@ -9,6 +9,7 @@ namespace ObserverLearning
     {
         // parameters needed if you want to send data to subscribers. Else it's like unity's update.
         void Notify();
-
+        void Subscribe(ISubscriber sub);
+        void Unsubscribe(ISubscriber sub);
     }
 }

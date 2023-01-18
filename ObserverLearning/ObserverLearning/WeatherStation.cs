@@ -25,8 +25,15 @@ namespace ObserverLearning
         {
             foreach(ISubscriber subscriber in subscribers)
             {
-                subscriber.Update();
+                subscriber.Update(temp, humidity, preasure);
             }
+        }
+
+        public void SetWeatherStats(double temp, double humidity, double preasure)
+        {
+            this.temp = temp;
+            this.humidity = humidity;
+            this.preasure = preasure;
         }
     }
 }

@@ -4,11 +4,9 @@ using System.Text;
 
 namespace ObserverLearning
 {
-    interface ISubscriber
+    public interface ISubscriber
     { 
         // IWeatherSubscriber would be more approp
-        void Update();
-        void Subscribe();
-        void Unsubscribe();
+        void Update(double temp, double humidity, double preasure);
     }
 }
