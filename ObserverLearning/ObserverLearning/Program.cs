@@ -7,14 +7,20 @@ namespace ObserverLearning
         static void Main(string[] args)
         {
             WeatherStation weatherStation = new WeatherStation();
-            Cellphone myPhone = new Cellphone();
+            Cellphone myMetricPhone = new Cellphone();
+            Cellphone myImperialPhone = new ImperialCellphone();
 
-            weatherStation.Subscribe(myPhone);
+            weatherStation.Subscribe(myMetricPhone);
+            weatherStation.Subscribe(myImperialPhone);
 
-            Console.WriteLine(myPhone.OutsideTemp);
-            weatherStation.temp = 10.0;
+            Console.WriteLine(myMetricPhone.ToString());
+            Console.WriteLine(myImperialPhone.ToString());
+
+            weatherStation.SetWeatherStats(0, 70, 100);
             weatherStation.Notify();
-            Console.WriteLine(myPhone.OutsideTemp);
+
+            Console.WriteLine(myMetricPhone.ToString());
+            Console.WriteLine(myImperialPhone.ToString());
         }
     }
 }
