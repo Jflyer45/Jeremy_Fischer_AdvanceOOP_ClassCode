@@ -70,5 +70,58 @@ namespace ObserverLearning
             message = message + "The Current Humidity is: " + this.Humidity + "\n";
             return message;
         }
+
+        public enum WeatherStat
+        {
+            Temperature, Humidity, Pressure
+        }
+
+        public double GetMin(WeatherStat statType)
+        {
+            if(statType == WeatherStat.Temperature)
+            {
+                return temapatures.Min();
+            }else if(statType == WeatherStat.Humidity)
+            {
+                return humidities.Min();
+            }
+            else if (statType == WeatherStat.Pressure)
+            {
+                return pressures.Min();
+            }
+            return -1;
+        }
+        public double GetMax(WeatherStat statType)
+        {
+            if (statType == WeatherStat.Temperature)
+            {
+                return temapatures.Max();
+            }
+            else if (statType == WeatherStat.Humidity)
+            {
+                return humidities.Max();
+            }
+            else if (statType == WeatherStat.Pressure)
+            {
+                return pressures.Max();
+            }
+            return -1;
+        }
+        public double GetAverage(WeatherStat statType)
+        {
+            if (statType == WeatherStat.Temperature)
+            {
+                return temapatures.Average();
+            }
+            else if (statType == WeatherStat.Humidity)
+            {
+                return humidities.Average();
+            }
+            else if (statType == WeatherStat.Pressure)
+            {
+                return pressures.Average();
+            }
+            return -1;
+        }
     }
 }
