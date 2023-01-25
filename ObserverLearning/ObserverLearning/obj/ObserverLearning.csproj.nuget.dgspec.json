@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jeremy\\Documents\\GitHub\\AdvanceOOP_ClassCode\\ObserverLearning\\ObserverLearning\\ObserverLearning.csproj": {}
+    "C:\\Users\\jflye\\source\\repos\\AdvanceOOP_ClassCode\\ObserverLearning\\ObserverLearning\\ObserverLearning.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jeremy\\Documents\\GitHub\\AdvanceOOP_ClassCode\\ObserverLearning\\ObserverLearning\\ObserverLearning.csproj": {
+    "C:\\Users\\jflye\\source\\repos\\AdvanceOOP_ClassCode\\ObserverLearning\\ObserverLearning\\ObserverLearning.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jeremy\\Documents\\GitHub\\AdvanceOOP_ClassCode\\ObserverLearning\\ObserverLearning\\ObserverLearning.csproj",
+        "projectUniqueName": "C:\\Users\\jflye\\source\\repos\\AdvanceOOP_ClassCode\\ObserverLearning\\ObserverLearning\\ObserverLearning.csproj",
         "projectName": "ObserverLearning",
-        "projectPath": "C:\\Users\\Jeremy\\Documents\\GitHub\\AdvanceOOP_ClassCode\\ObserverLearning\\ObserverLearning\\ObserverLearning.csproj",
-        "packagesPath": "C:\\Users\\Jeremy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jeremy\\Documents\\GitHub\\AdvanceOOP_ClassCode\\ObserverLearning\\ObserverLearning\\obj\\",
+        "projectPath": "C:\\Users\\jflye\\source\\repos\\AdvanceOOP_ClassCode\\ObserverLearning\\ObserverLearning\\ObserverLearning.csproj",
+        "packagesPath": "C:\\Users\\jflye\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jflye\\source\\repos\\AdvanceOOP_ClassCode\\ObserverLearning\\ObserverLearning\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Jeremy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jflye\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.413\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
