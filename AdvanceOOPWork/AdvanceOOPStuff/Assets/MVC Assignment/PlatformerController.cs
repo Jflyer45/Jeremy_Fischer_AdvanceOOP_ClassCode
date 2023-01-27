@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlatformerController : PlatformerElement
 {
+    public FPSCharacter FPSController;
     public void OnWinBoxHit()
     {
         Debug.Log("You won!");
