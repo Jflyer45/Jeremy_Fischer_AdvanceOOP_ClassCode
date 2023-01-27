@@ -371,6 +371,7 @@ GameObject:
   m_Component:
   - component: {fileID: 211342474}
   - component: {fileID: 211342473}
+  - component: {fileID: 211342475}
   m_Layer: 0
   m_Name: Controller
   m_TagString: Untagged
@@ -390,7 +391,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7581138c6833e9428bcf5725df892ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fPSCharacter: {fileID: 1443425757}
 --- !u!4 &211342474
 Transform:
   m_ObjectHideFlags: 0
@@ -406,6 +406,18 @@ Transform:
   m_Father: {fileID: 1120776190}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &211342475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 211342472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 880dd483086f49b4596cc13bdacba086, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &235782240
 GameObject:
   m_ObjectHideFlags: 0
@@ -466,17 +478,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 74658045}
   lockCursor: 0
-  lookSensitivity: 0
-  maxUpRotation: 0
-  maxDownRotation: 0
+  lookSensitivity: 3.99
+  maxUpRotation: 1
+  maxDownRotation: 1
   xRotation: 0
   controller: {fileID: 1443425756}
-  walkSpeed: 0
-  strafeSpeed: 0
-  sprintKey: 0
-  sprintFactor: 0
-  jumpHeight: 0
-  maxJumps: 0
+  walkSpeed: 7.4
+  strafeSpeed: 5.41
+  sprintKey: 122
+  sprintFactor: 1.72
+  jumpHeight: 4.49
+  maxJumps: 1
   velocity: {x: 0, y: 0, z: 0}
   jumpsSinceLastLand: 0
 --- !u!1 &450661641
@@ -1540,7 +1552,6 @@ GameObject:
   - component: {fileID: 1443425760}
   - component: {fileID: 1443425759}
   - component: {fileID: 1443425758}
-  - component: {fileID: 1443425757}
   - component: {fileID: 1443425756}
   m_Layer: 0
   m_Name: FPS Character
@@ -1567,18 +1578,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1443425757
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1443425755}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 880dd483086f49b4596cc13bdacba086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!136 &1443425758
 CapsuleCollider:
   m_ObjectHideFlags: 0
