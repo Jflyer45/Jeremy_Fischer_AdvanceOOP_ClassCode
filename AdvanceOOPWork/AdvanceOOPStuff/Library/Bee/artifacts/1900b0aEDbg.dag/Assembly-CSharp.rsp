@@ -368,6 +368,8 @@
 "Assets/MVC In Class/Scripts/BounceController.cs"
 "Assets/MVC In Class/Scripts/BounceModel.cs"
 "Assets/MVC In Class/Scripts/BounceView.cs"
+"Assets/Singleton In Class/GameManager.cs"
+"Assets/Singleton In Class/Singleton.cs"
 -langversion:9.0
 
 /deterministic

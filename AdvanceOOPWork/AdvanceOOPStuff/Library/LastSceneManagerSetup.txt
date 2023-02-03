@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/MVC Assignment/MVC Assignment.unity
+- path: Assets/Singleton In Class/SceneA.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

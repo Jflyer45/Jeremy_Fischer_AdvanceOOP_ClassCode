@@ -15,6 +15,7 @@ public class FPSCharacter : PlatformerElement
 
     void Update()
     {
+        Debug.Log(app);
         transform.Rotate(0, Input.GetAxis("Mouse X") * app.platformerModel.FPSModel.lookSensitivity, 0);
         app.platformerModel.FPSModel.xRotation -= Input.GetAxis("Mouse Y") * app.platformerModel.FPSModel.lookSensitivity;
         app.platformerModel.FPSModel.xRotation = Mathf.Clamp(app.platformerModel.FPSModel.xRotation, -app.platformerModel.FPSModel.maxUpRotation, app.platformerModel.FPSModel.maxDownRotation);
