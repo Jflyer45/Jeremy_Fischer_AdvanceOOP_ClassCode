@@ -27,6 +27,31 @@ public class GenerateMaze : MonoBehaviour
         return myArray;
     }
 
+    private void DrunkenWalk(int[,] array)
+    {
+        int entry = Random.Range(0, array.Length);
+
+
+        int y = 0;
+        int x = 0;
+        while(x < array.Length)
+        {
+            int choice = Random.Range(0, 2);
+
+            if(choice == 0)
+            {
+
+            }else if(choice == 1)
+            {
+
+            }
+            else
+            {
+
+            }
+        }
+    }
+
     private void DrawMap(int[,] inputArray)
     {
         for (int i = 0; i < 50; i++)
