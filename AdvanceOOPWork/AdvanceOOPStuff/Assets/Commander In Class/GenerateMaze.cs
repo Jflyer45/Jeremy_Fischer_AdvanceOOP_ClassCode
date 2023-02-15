@@ -9,7 +9,7 @@ public class GenerateMaze : MonoBehaviour
     void Start()
     {
 
-        DrawMap(InstantiateMap(50,50));
+        DrawMap(DrunkenWalk(InstantiateMap(50,50)));
     }
 
     private int[,] InstantiateMap(int width, int height)
@@ -27,29 +27,31 @@ public class GenerateMaze : MonoBehaviour
         return myArray;
     }
 
-    private void DrunkenWalk(int[,] array)
+    private int[,] DrunkenWalk(int[,] array)
     {
-        int entry = Random.Range(0, array.Length);
+        int entry = Random.Range(0, 49);
 
-
-        int y = 0;
+        int y = entry;
         int x = 0;
-        while(x < array.Length)
+        while(x < 49)
         {
             int choice = Random.Range(0, 2);
 
             if(choice == 0)
             {
-
-            }else if(choice == 1)
+                x++;
+            }else if(choice == 1 && y +1 < 49)
             {
-
+                y++;
             }
-            else
+            else if(y-1 > 0)
             {
-
+                y--;
             }
+            Debug.Log("Making zero" + x + " " + y);
+            array[x, y] = 0;
         }
+        return array;
     }
 
     private void DrawMap(int[,] inputArray)
