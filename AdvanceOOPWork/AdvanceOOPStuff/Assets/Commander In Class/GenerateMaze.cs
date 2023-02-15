@@ -5,12 +5,13 @@ using UnityEngine;
 public class GenerateMaze : MonoBehaviour
 {
     public GameObject cube;
+    public int scale = 5;
     // Start is called before the first frame update
     void Start()
     {
         int[,] myMap = InstantiateMap(50, 50);
 
-        for(int i = 0; i < 3; i++) { myMap = DrunkenWalk(myMap); }
+        for(int i = 0; i < 1; i++) { myMap = DrunkenWalk(myMap); }
 
         DrawMap(myMap);
     }
@@ -66,7 +67,7 @@ public class GenerateMaze : MonoBehaviour
             {
                 if (inputArray[i, j] == 1)
                 {
-                    Vector3 pos = new Vector3(i, 0, j);
+                    Vector3 pos = new Vector3(i*scale, 0, j*scale);
                     Instantiate(cube, pos, Quaternion.identity);
                 }
             }
