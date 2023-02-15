@@ -8,8 +8,11 @@ public class GenerateMaze : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        int[,] myMap = InstantiateMap(50, 50);
 
-        DrawMap(DrunkenWalk(InstantiateMap(50,50)));
+        for(int i = 0; i < 3; i++) { myMap = DrunkenWalk(myMap); }
+
+        DrawMap(myMap);
     }
 
     private int[,] InstantiateMap(int width, int height)
@@ -35,7 +38,7 @@ public class GenerateMaze : MonoBehaviour
         int x = 0;
         while(x < 49)
         {
-            int choice = Random.Range(0, 2);
+            int choice = Random.Range(0, 3);
 
             if(choice == 0)
             {
@@ -51,14 +54,15 @@ public class GenerateMaze : MonoBehaviour
             Debug.Log("Making zero" + x + " " + y);
             array[x, y] = 0;
         }
+        Debug.Log("asd");
         return array;
     }
 
     private void DrawMap(int[,] inputArray)
     {
-        for (int i = 0; i < 50; i++)
+        for (int i = 0; i < 49; i++)
         {
-            for (int j = 0; j < 50; j++)
+            for (int j = 0; j < 49; j++)
             {
                 if (inputArray[i, j] == 1)
                 {
