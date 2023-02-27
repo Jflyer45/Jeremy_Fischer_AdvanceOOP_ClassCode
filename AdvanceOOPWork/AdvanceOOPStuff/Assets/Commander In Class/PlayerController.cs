@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
         transform.Translate(Vector3.forward);
     }
 
-    public void ResetPosistion()
+    public void ResetPosition()
     {
         transform.position = new Vector3(0, 0, 0);
     }
