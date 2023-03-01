@@ -36,6 +36,7 @@ namespace StatePattern
         public void SelectItem()
         {
             State.SelectItem(this);
+            State.DispenseItem(this);
         }
 
         public void DispenseItem()
