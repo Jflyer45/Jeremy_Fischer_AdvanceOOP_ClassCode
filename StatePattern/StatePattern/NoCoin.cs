@@ -6,32 +6,30 @@ using System.Threading.Tasks;
 
 namespace StatePattern
 {
-    public class CoinInserted : State
+    public class NoCoin : State
     {
         public override void DispenseItem(VendingMachine context)
         {
             context.State = new NoCoin();
-            Console.WriteLine("You must select an item first");
+            Console.WriteLine("You havn't inserted any money");
         }
 
         public override void EjectCoin(VendingMachine context)
         {
             context.State = new NoCoin();
-            Console.WriteLine("Coin Returned");
+            Console.WriteLine("You havn't inserted any money");
         }
 
         public override void InsertCoin(VendingMachine context)
         {
             context.State = new CoinInserted();
-            Console.WriteLine("You cannot input a second coin");
-            
+            Console.WriteLine("Coin Selected pick a item");
         }
 
         public override void SelectItem(VendingMachine context)
         {
-            context.State = new ItemSold();
-            Console.WriteLine("Your item is selected.");
-            
+            context.State = new NoCoin();
+            Console.WriteLine("You havn't inserted any money");
         }
     }
 }

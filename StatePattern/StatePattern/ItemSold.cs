@@ -6,32 +6,27 @@ using System.Threading.Tasks;
 
 namespace StatePattern
 {
-    public class CoinInserted : State
+    public class ItemSold : State
     {
         public override void DispenseItem(VendingMachine context)
         {
             context.State = new NoCoin();
-            Console.WriteLine("You must select an item first");
+            Console.WriteLine("The item is being dispensed");
         }
 
         public override void EjectCoin(VendingMachine context)
         {
-            context.State = new NoCoin();
-            Console.WriteLine("Coin Returned");
+            Console.WriteLine("You cannot get your money back while the machine is dispensing");
         }
 
         public override void InsertCoin(VendingMachine context)
         {
-            context.State = new CoinInserted();
-            Console.WriteLine("You cannot input a second coin");
-            
+            Console.WriteLine("You cannot insert a coin while the machine is dispensing");
         }
 
         public override void SelectItem(VendingMachine context)
         {
-            context.State = new ItemSold();
-            Console.WriteLine("Your item is selected.");
-            
+            Console.WriteLine("You cannot select an item when the machine is already dispensing");
         }
     }
 }

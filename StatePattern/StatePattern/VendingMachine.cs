@@ -10,24 +10,37 @@ namespace StatePattern
 {
     public class VendingMachine
     {
-        public void InsertCoin()
+        private State state = new NoCoin();
+
+        public VendingMachine()
         {
 
+        }
+
+        public State State
+        {
+            get { return this.state; }
+            set { this.state = value; }
+        }
+
+        public void InsertCoin()
+        {
+            State.InsertCoin(this);
         }
 
         public void EjectCoin()
         {
-
+            State.EjectCoin(this);
         }
 
         public void SelectItem()
         {
-
+            State.SelectItem(this);
         }
 
         public void DispenseItem()
         {
-
+            State.DispenseItem(this);
         }
     }
 }
