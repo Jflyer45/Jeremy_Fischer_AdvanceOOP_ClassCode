@@ -356,7 +356,7 @@
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/UnityEngine.UI.ref.dll"
 "Assets/Commander In Class/Command.cs"
 "Assets/Commander In Class/GenerateMaze.cs"
-"Assets/Commander In Class/InputHandler.cs"
+"Assets/Commander In Class/Invoker.cs"
 "Assets/Commander In Class/MoveForward.cs"
 "Assets/Commander In Class/MoveLeft.cs"
 "Assets/Commander In Class/MoveRight.cs"
