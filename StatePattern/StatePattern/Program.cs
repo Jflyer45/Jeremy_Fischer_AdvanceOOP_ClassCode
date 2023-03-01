@@ -15,6 +15,8 @@ namespace StatePattern
             myMachine.SelectItem();
             myMachine.DispenseItem();
 
+
+
         }
     }
 }
