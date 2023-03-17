@@ -1,6 +1,7 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Newtonsoft.Json;
+using System.ComponentModel;
 
 public class InventorySystemAdapter : InventorySystem, IInventorySystem
 {
@@ -20,14 +21,39 @@ public class InventorySystemAdapter : InventorySystem, IInventorySystem
         }
         else if (aLocation == SaveLocation.Local)
         {
-            Debug.Log("Have code here to save to a local drive");
+            SaveToJSON(anItem);
         }
         else
         {
             AddItem(anItem);
             Debug.Log("Have code here to save to a local drive");
+            SaveToJSON(anItem);
         }
     }
+
+    public void AddItems(List<InventoryItem> anItems, SaveLocation aLocation)
+    {
+        if (aLocation == SaveLocation.Cloud)
+        {
+            foreach(InventoryItem i in anItems)
+            {
+                AddItem(i);
+            }
+        }
+        else if (aLocation == SaveLocation.Local)
+        {
+            SaveMultipleToJSON(anItems);
+        }
+        else
+        {
+            foreach (InventoryItem i in anItems)
+            {
+                AddItem(i);
+            }
+            SaveMultipleToJSON(anItems);
+        }
+    }
+
     public void RemoveItem(InventoryItem anItem, SaveLocation aLocation)
     {
         if (aLocation == SaveLocation.Cloud)
@@ -63,4 +89,24 @@ public class InventorySystemAdapter : InventorySystem, IInventorySystem
         return new List<InventoryItem>();
     }
     
+    
+    public void SaveToJSON(object obj)
+    {
+        string json = JsonConvert.SerializeObject(obj);
+
+        //write string to file
+        System.IO.File.WriteAllText("text.json", json);
+    }
+    public void SaveMultipleToJSON(List<InventoryItem> objs)
+    {
+        string json = "";
+
+        foreach (object obj in objs)
+        {
+            json += JsonConvert.SerializeObject(obj);
+        }
+        //write string to file
+        System.IO.File.WriteAllText("text.json", json);
+    }
+
 }

@@ -5,5 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "new item", menuName = "Inventory")]
 public class InventoryItem : ScriptableObject
 {
-    // place holder, need to do in assignment
+    public string itemName;
+    public int wieght;
+    public int value;
 }

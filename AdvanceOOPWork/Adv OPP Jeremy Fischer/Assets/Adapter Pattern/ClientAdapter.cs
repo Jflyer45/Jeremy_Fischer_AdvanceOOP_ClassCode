@@ -8,6 +8,7 @@ public class ClientAdapter : MonoBehaviour
 
     private InventorySystem inventorySystem;
     private IInventorySystem inventorySystemAdapter;
+    public PlayerInventory pi;
 
     private void Start()
     {
@@ -25,5 +26,12 @@ public class ClientAdapter : MonoBehaviour
         {
             inventorySystemAdapter.AddItem(item, SaveLocation.Both);
         }
+
+
+        if (GUILayout.Button("Save player inventory"))
+        {
+            inventorySystemAdapter.AddItems(pi.inventoryItems, SaveLocation.Local);
+        }
+        
     }
 }
