@@ -2,17 +2,65 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InventorySystemAdapter : MonoBehaviour
+public class InventorySystemAdapter : InventorySystem, IInventorySystem
 {
-    // Start is called before the first frame update
-    void Start()
+    private List<InventoryItem> cloudInventory;
+
+    public void SyncInventories()
     {
-        
+        var cloudInventory = GetInventory();
+        Debug.Log("Downloaded the cloud inventory");
     }
 
-    // Update is called once per frame
-    void Update()
+    public void AddItem(InventoryItem anItem, SaveLocation aLocation)
     {
-        
+        if(aLocation == SaveLocation.Cloud)
+        {
+            AddItem(anItem);
+        }
+        else if (aLocation == SaveLocation.Local)
+        {
+            Debug.Log("Have code here to save to a local drive");
+        }
+        else
+        {
+            AddItem(anItem);
+            Debug.Log("Have code here to save to a local drive");
+        }
     }
+    public void RemoveItem(InventoryItem anItem, SaveLocation aLocation)
+    {
+        if (aLocation == SaveLocation.Cloud)
+        {
+            RemoveItem(anItem);
+        }
+        else if (aLocation == SaveLocation.Local)
+        {
+            Debug.Log("Have code here to remove to a local drive");
+        }
+        else
+        {
+            RemoveItem(anItem);
+            Debug.Log("Have code here to remove to a local drive");
+        }
+    }
+
+    public List<InventoryItem> GetInventory(SaveLocation aLocation)
+    {
+        if (aLocation == SaveLocation.Cloud)
+        {
+            return GetInventory();
+        }
+        else if (aLocation == SaveLocation.Local)
+        {
+            return new List<InventoryItem>();
+            Debug.Log("Return the local inventory stuff");
+        }
+        else
+        {
+            return GetInventory();
+            Debug.Log("This is were you would sync");
+        }
+    }
+    
 }
