@@ -6,6 +6,7 @@ public class Invoker : MonoBehaviour
 {
     private bool isRecording;
     private bool isReplaying;
+    public PlayerController pc;
 
     private List<Command> recordedCommands = new List<Command>();
 
@@ -48,6 +49,27 @@ public class Invoker : MonoBehaviour
 
     }
 
+    IEnumerator Reverse()
+    {
+        int i = recordedCommands.Count - 1;
+        while (i > -1)
+        {
+            if(recordedCommands[i] is MoveForward)
+            {
+                new MoveBackwards(pc).Execute();
+            } else if(recordedCommands[i] is MoveRight)
+            {
+                new MoveLeft(pc).Execute();
+            }
+            else
+            {
+                new MoveRight(pc).Execute();
+            }
+            i--;
 
+            //recordedCommands[i].Execute();
+            yield return new WaitForSeconds(.5f);
+        }
+    }
 
 }

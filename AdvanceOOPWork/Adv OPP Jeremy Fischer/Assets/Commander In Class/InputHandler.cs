@@ -61,5 +61,10 @@ public class InputHandler : MonoBehaviour
                 invoker.Replay();
             }
         }
+
+        if (GUILayout.Button("Reverse"))
+        {
+            invoker.StartCoroutine("Reverse");
+        }
     }
 }

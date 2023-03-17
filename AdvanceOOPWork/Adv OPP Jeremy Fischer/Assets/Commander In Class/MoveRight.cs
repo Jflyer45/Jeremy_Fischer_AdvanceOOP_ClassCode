@@ -13,6 +13,6 @@ public class MoveRight : Command
 
     public override void Execute()
     {
-        this.controller.MoveLeft();
+        this.controller.MoveRight();
     }
 }

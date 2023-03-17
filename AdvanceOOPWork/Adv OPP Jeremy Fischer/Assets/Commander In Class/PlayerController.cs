@@ -19,8 +19,13 @@ public class PlayerController : MonoBehaviour
         transform.Translate(Vector3.forward);
     }
 
+    public void MoveBackwards()
+    {
+        transform.Translate(Vector3.back);
+    }
+
     public void ResetPosition()
     {
-        transform.position = new Vector3(0, 0, 0);
+        transform.position = new Vector3(-15, 0, 0);
     }
 }
