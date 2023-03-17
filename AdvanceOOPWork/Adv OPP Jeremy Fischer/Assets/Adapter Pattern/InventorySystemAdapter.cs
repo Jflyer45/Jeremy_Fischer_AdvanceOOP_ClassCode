@@ -49,11 +49,10 @@ public class InventorySystemAdapter : InventorySystem, IInventorySystem
     {
         if (aLocation == SaveLocation.Cloud)
         {
-            return GetInventory();
+             GetInventory();
         }
         else if (aLocation == SaveLocation.Local)
         {
-            return new List<InventoryItem>();
             Debug.Log("Return the local inventory stuff");
         }
         else
@@ -61,6 +60,7 @@ public class InventorySystemAdapter : InventorySystem, IInventorySystem
             return GetInventory();
             Debug.Log("This is were you would sync");
         }
+        return new List<InventoryItem>();
     }
     
 }
