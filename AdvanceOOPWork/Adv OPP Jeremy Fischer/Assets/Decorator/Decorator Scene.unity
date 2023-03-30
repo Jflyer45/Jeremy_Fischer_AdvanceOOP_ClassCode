@@ -360,8 +360,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponConfig: {fileID: 11400000, guid: 7dcfbf6c4ef49c24086c046cdffde681, type: 2}
-  mainWeaponAttachment: {fileID: 0}
-  secondaryAttachment: {fileID: 0}
+  mainWeaponAttachment: {fileID: 11400000, guid: ea53aa05b3144034f884c1cb17ff9f5f, type: 2}
+  secondaryAttachment: {fileID: 11400000, guid: 302ab55dec8f9f04bb47c23cb366112c, type: 2}
 --- !u!65 &1276837771
 BoxCollider:
   m_ObjectHideFlags: 0
