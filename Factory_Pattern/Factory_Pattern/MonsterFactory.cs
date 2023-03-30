@@ -9,15 +9,17 @@ namespace Factory_Pattern
 {
     public abstract class MonsterFactory
     {
-        public abstract Monster CreateMonster();
+        protected abstract Monster CreateMonster();
 
-        public void MakeMonster()
+        public Monster MakeMonster()
         {
             Monster monster = CreateMonster();
 
             Random rnd = new Random();
             monster.Y = rnd.Next(1, 100);
             monster.X = rnd.Next(1, 100);
+
+            return monster;
         }
     }
 }
